@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header{
+width: 100%;
+height: 100px;
+margin-top: 40px;
+position:relative;
+z-index: 1;
+}
+
+.container_menu{
+    max-width: 80%;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-superior{
+    height: 100%;
+    display:flex;
+    align-items: center;
+}
+
+
+.logo-superior img{
+   width: 40%;
+}
+
+.nav-links{
+	display: flex;
+    align-items: center;
+	justify-content: space-around;
+	width: 60%;
+    
+}
+.nav-links li{
+	list-style: none;
+    margin-left: 36px;
+
+}
+.nav-links a{
+	color: rgb(28, 3, 48);
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-size: 19px;
+    text-transform: uppercase;
+}
+
+/*cover*/
+
+.container_cover{
+    width: 100%;
+    height: 800px;
+    background-image: url(../img/Background-page.png);
+    background-size: 100%;
+}
+.cover{
+    max-width: 1200px;
+    height: 800px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container_cover .text{
+    max-width: 400px;
+}
+
+.container_cover .text h1{
+    font-size: 60px; 
+    font-weight: 600;
+    color: rgb(255, 123, 0); 
+}
+.container_cover .text p{
+    font-size: 25px;
+    margin-top: 40px;
+}
+
+.container_cover .text input{
+    padding: 18px 80px;
+    border: none;
+    font-size: 18px;
+    border-radius: 50px;
+    margin-top: 80px;
+    background: linear-gradient(to right, rgb(202, 125, 23),rgb(233, 130, 112));
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    box-shadow: 1px 1px 30px -12px rgb(221, 60, 60);
+}
+
+.container_cover .text input :hover{
+    box-shadow: 1px 1px 30px -6px rgb(66, 6, 6);
+ 
+}
+.container_cover img{
+width: 100%;
+animation: move-vector 3s linear infinite;
+}
+
+@keyframes move-vector {
+    0%{
+        transform: translateX(10px);
+    }
+    50%{
+        transform: translateX(0px);
+    } 
+    100%{
+        transform: translateX(10px);
+    }
+}
+
+
+.container__registro{
+background-image: url(../img/FONDO.png);
+}
+.container_registro{
+    width: 1200px;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.container_registro .tienda{
+	text-align: center;
+	align-self: center;
+    margin: auto;
+	color: #C7CECC;
+	font-size: 50px;
+}
+
+.container_registro .botones .b1{
+    padding: 18px 80px;
+    border: none;
+    font-size: 18px;
+    border-radius: 50px;
+    margin-left: 80px;
+
+    background: linear-gradient(to right, rgb(221, 95, 60),rgb(233, 130, 112));
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    box-shadow: 1px 1px 30px -12px rgb(255, 227, 227);
+}
+
+.container_registro .botones .b2{
+    padding: 18px 80px;
+    border: none;
+    font-size: 18px;
+    border-radius: 50px;
+    margin-left: 20px;
+    background: rgb(66, 66, 66);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    box-shadow: 1px 1px 30px -12px rgb(245, 125, 125);
+}   
+.map-size{
+	width: 80%;
+}
+
+.card-body{
+
+	background: #2f2636;
+	transition: 0.5s;
+}
+.card-body:hover {
+	opacity: 1;
+	transform: translateY(-20px);
+}
+.card{
+	border: 0 !important;
+	background: #270c26;
+
+}
+.cover-small{
+	height: 250px;
+	background-blend-mode: normal;
+}
+.card-title{
+	opacity: 0.5;
+	min-height: 3rem;
+	color: #C7CECC;
+	padding: 30px;
+}
+.card-text{
+	opacity: 0.5;
+	min-height: 10rem;
+	color: #C7CECC;
+}
+.card-title:hover{
+	opacity: 1;
+}
+.card-text:hover{
+	opacity: 1;
+}
+
+.form-register{
+	width: 400px;
+	background: #24303c;
+	padding: 30px;
+	margin: auto;
+	margin-top: 100px;
+	border-radius: 4px;
+	font-family: 'calibri';
+	color: white;
+	box-shadow: 7px 13px 37px #000;
+}
+.form-register h1{
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+.controls{
+	width: 100%;
+	background: #24303c;
+	padding: 10px;
+	border-radius: 4px;
+	margin-bottom: 16px;
+	border: 1px solid #c52a1f;
+	font-family: 'calibri';
+	font-size: 18px;
+}
+.form-register p{
+	height: 40px;
+	text-align: center;
+	font-size: 18px;
+
+
+}
+
+.form-register a {
+	color: white;
+	text-decoration: none;
+}
+.form-register a:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+.form-register .button {
+	width: 100%;
+	background: #c55c1f;
+	border: none;
+	padding: 12px;
+	color: white;
+	margin: 16px 0;
+	font-size: 16px;
+}
+
+
+
+.Re{
+	background-image: url(../img/Fondo\ imagen\ 1.jpg);
+}
+.Lo{
+	background-image: url(../img/Fondo\ imagen\ 1.jpg);
+}
+
+
+
+footer{
+	background: #111111;
+	height: auto;
+	width: 100vw;
+	font-family: "calibri";
+	padding-top: 40px;
+	color: #fff;
+
+}
+.footer-content{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+.footer-content h3{
+	font-size: 1.8rem;
+	font-weight: 400;
+	text-transform: capitalize;
+	line-height: 3rem;
+}
+.footer-content p{
+	max-width: 500px;
+	margin: 10px auto;
+	line-height: 28px;
+	font-size: 14px
+}
+.footer-bottom{
+	background: #111111;
+	width: 100vw;
+	padding: 20px;
+	text-align: center;
+	border: 5px solid rgba(0,0,0,0.25);
+}
+.footer-bottom p{
+	font-size: 14px;
+	word-spacing: 2px;
+	text-transform: capitalize;
+}
+.footer-bottom span{
+	text-transform: uppercase;
+	opacity: .4;}
+
+
+    
